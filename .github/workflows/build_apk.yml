@@ -33,7 +33,7 @@ jobs:
         env:
           CI: 'true'
         run: |
-          flet build apk src --yes --verbose
+          flet build apk . --yes --verbose
 
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
